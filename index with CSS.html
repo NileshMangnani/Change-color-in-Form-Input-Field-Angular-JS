@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<style>
+body {
+	background-color:#F66;
+	font-family:Verdana, Geneva, sans-serif;
+	padding:8%;
+	font-size:18px;
+}
+
+.header h2 {
+	color:#FFF;
+}
+
+input {
+	height:50px;
+	width:50vw;
+	border:hidden;
+	background-color:#F66;
+}
+input.ng-invalid {
+    background-color: #F03;
+	
+}
+
+input.ng-valid {
+	size:500px;
+}
+button {
+	height:60px;
+	width:250px;
+	background-color:#F03;
+	border-radius:30px;
+}
+
+</style>
+<body>
+<div class="header">
+<center><h2>Form</h2></center>
+
+<center>
+<form ng-app="" name="myForm">
+
+<table width="400">
+  <tr>
+    <td>Name</td>
+    <td><input name="myName" ng-model="myText" required></td>
+  </tr>
+  <tr>
+    <td>Number:</td>
+    <td><input name="myNumber" ng-model="myNumber" type="number" required></td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td><input name="myEmail" ng-model="myEmail" type="email" required></td>
+  </tr>
+  
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>    
+</form>
+<button type="submit">Submit</button>
+</center>
+</div>
+
+
+</body>
+</html>
